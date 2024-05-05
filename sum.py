@@ -1,0 +1,6 @@
+a=int(input("Enter your first number"))
+b=int(input("Enter your second number"))
+print(a+b)
+c=int(input("Enter your real number1:"))
+d=int(input("Enter your real number2:"))
+print(c/d)
