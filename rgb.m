@@ -1,14 +1,7 @@
-import numpy as np
-
-# Read the image
-m = plt.imread("/home/rguktrkvalley/Pictures/recent_addiction.jpg")
-
-# Split channels
-red = m[:, :, 0]
-green = m[:, :, 1]
-blue = m[:, :, 2]
-
-# Save each channel to a CSV file
-np.savetxt("red.csv", red.flatten(), delimiter=",")
-np.savetxt("green.csv", green.flatten(), delimiter=",")
-np.savetxt("blue.csv", blue.flatten(), delimiter=",")
+m = imread("/home/rguktrkvalley/Pictures/recent_addiction.jpg");
+red = m(:, :, 1);
+green = m(:, :, 2);
+blue = m(:, :, 3);
+csvwrite("red.csv", red(:));
+csvwrite("green.csv", green(:));
+csvwrite("blue.csv", blue(:));
