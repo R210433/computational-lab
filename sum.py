@@ -1,6 +1,4 @@
-a=int(input("Enter your first number"))
-b=int(input("Enter your second number"))
-print(a+b)
-c=int(input("Enter your real number1:"))
-d=int(input("Enter your real number2:"))
-print(c/d)
+a=int(input("Enter a value:"))
+b=int(input("Enter b value:"))
+sum=a+b
+print("sum of a and b:",sum)
