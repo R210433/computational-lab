@@ -1,11 +1,8 @@
 import pickle
 import csv
-k=[1,2,3,4]
-f=open("mycar.pkl",'wb')
-pickle.dump(k,f)
-f.close()
-jk=open("mycar.pkl","rb")
-l=pickle.load(jk)
-gh=open("opencsv.csv","w")
-writer=csv.writer(gh)
-writer.writerow(l)
+a=open("bye.pkl",'rb')
+m=pickle.load(a)
+a.close()
+n=open("noth.csv","w")
+w=csv.writer(n)
+w.writerow(m)
