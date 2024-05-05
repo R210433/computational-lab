@@ -1,17 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io import wavfile
-
-# File path to the audio file
 file_path = '/home/rguktrkvalley/python(Cl)/Chorus.wav'
-
-# Read the audio file
 sample, data_audio = wavfile.read(file_path)
-
-# Calculate time axis
 timing= np.arange(len(data_audio)) / sample
-
-# Plot the audio signal
 plt.plot(timing,data_audio)
 plt.xlabel('Time (s)')
 plt.ylabel('Amplitude')
